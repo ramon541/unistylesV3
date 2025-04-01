@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "unistylesV3",
-    "slug": "unistylesV3",
+    "slug": "unistylesv3",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,6 +26,12 @@
     },
     "plugins": [
       "react-native-edge-to-edge"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1c28e555-33ff-451c-ae15-60a2c1e70f86"
+      }
+    },
+    "owner": "ramon5412"
   }
 }
