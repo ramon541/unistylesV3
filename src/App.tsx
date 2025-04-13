@@ -4,7 +4,7 @@ import { Image, Text, View } from 'react-native';
 import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles';
 import { light } from './libs/unistyles/theme';
 import { AppThemes } from './libs/unistyles';
-import { TextButton } from './components';
+import { CirclePhoto, TextButton } from './components';
 
 export default function App() {
     const [theme, setTheme] = useState<keyof AppThemes>('light');
@@ -28,22 +28,18 @@ export default function App() {
                     style={styles.image}
                     resizeMode="cover"
                 />
-                <View style={styles.bgPhoto}>
-                    <View style={styles.circlePhoto}>
-                        <Image
-                            source={require('../assets/profile.jpg')}
-                            style={styles.photo}
-                            resizeMode="contain"
-                        />
-                    </View>
-                </View>
+                <CirclePhoto
+                    source={require('../assets/profile.jpg')}
+                    resizeMode="contain"
+                />
             </View>
             <View style={styles.containerDescription}>
                 <Text style={styles.header}>Ramon Dias</Text>
                 <Text style={styles.profession}>Mobile Developer</Text>
                 <Text style={styles.description}>
-                    Hardworking and reliable UI/UXdesigner focused on going
-                    above and beyond to support teams and serve customers.
+                    Sou um desenvolvedor mobile dedicado, sempre em busca de ir
+                    além para apoiar o time e oferecer a melhor experiência aos
+                    usuários.
                 </Text>
                 <TextButton onPress={onToggleTheme} text="Mudar tema" />
             </View>
@@ -59,34 +55,6 @@ const styles = StyleSheet.create((theme) => ({
     image: {
         height: 210,
         width: '100%',
-    },
-    bgPhoto: {
-        backgroundColor: theme.colors.background,
-        height: 157,
-        width: 157,
-        borderRadius: 157 / 2,
-        borderWidth: 2,
-        borderColor: theme.colors.primary,
-
-        justifyContent: 'center',
-        alignItems: 'center',
-
-        elevation: 5,
-
-        position: 'absolute',
-        bottom: -157 / 2,
-        left: '50%',
-        transform: [{ translateX: -157 / 2 }],
-    },
-    photo: {
-        width: 145,
-        height: 145,
-    },
-    circlePhoto: {
-        width: 145,
-        height: 145,
-        borderRadius: '100%',
-        overflow: 'hidden',
     },
     containerImages: {
         marginBottom: 157 / 2,
