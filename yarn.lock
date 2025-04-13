@@ -4933,10 +4933,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
-react-native-edge-to-edge@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/react-native-edge-to-edge/-/react-native-edge-to-edge-1.5.0.tgz#1c27c8129bf685d5b86d488d8a1b847adf726302"
-  integrity sha512-5DSya4pvH9zrqsSwd3vH5ZAS+8JntIXV+kfSe5soHr0lGW2/N4j5et8pkhiAbBDf2DEeAQXhQfHDoaiAWnUrYw==
+react-native-edge-to-edge@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/react-native-edge-to-edge/-/react-native-edge-to-edge-1.5.1.tgz#2cfb281155a6a83a2c53e1a2f30078fe95ee6638"
+  integrity sha512-x9ldVAgSzxlgudxd8FDbl5fYJjXiFBpwaiTBvmUY3u6Tl7Own5DFSH6UUEbS57NWVYGJftvnsNyuNH/6c9Kvrg==
 
 react-native-nitro-modules@0.25.2:
   version "0.25.2"

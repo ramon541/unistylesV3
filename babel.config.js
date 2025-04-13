@@ -1,9 +1,7 @@
 module.exports = function (api) {
-  api.cache(true)
+    api.cache(true);
 
-  return {
-    plugins: [
-        ['react-native-unistyles/plugin']
-    ]
-  }
-}
+    return {
+        plugins: ['react-native-unistyles/plugin'],
+    };
+};
