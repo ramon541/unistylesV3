@@ -1120,6 +1120,11 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@expo-google-fonts/poppins@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/poppins/-/poppins-0.3.0.tgz#1b6da64a829f19858aa926c427b5f99a3ac2df09"
+  integrity sha512-52hH328xotSgRUsceRxUeR+3s2CvBDYS9zJQGP+NjBcHT8ZcLz2x0JAKzTGkHNTEM7+Ab7dow9TBDuJ/9qp9YA==
+
 "@expo/bunyan@^4.0.0":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.1.tgz#ab9e17e36c71c704a0ce72168378a487368da736"

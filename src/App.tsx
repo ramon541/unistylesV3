@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, StatusBar } from 'react-native';
 import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles';
+import {
+    Poppins_400Regular,
+    Poppins_700Bold,
+    useFonts,
+} from '@expo-google-fonts/poppins';
+
 import { light } from './libs/unistyles/theme';
 import { AppThemes } from './libs/unistyles';
 import { CirclePhoto, TextButton } from './components';
 
 export default function App() {
     const [theme, setTheme] = useState<keyof AppThemes>('light');
+    useFonts({ Poppins_400Regular, Poppins_700Bold });
     function onToggleTheme() {
         const currentTheme = UnistylesRuntime.getTheme();
         const newTheme = currentTheme === light ? 'dark' : 'light';
@@ -20,7 +26,7 @@ export default function App() {
             <StatusBar
                 translucent={false}
                 backgroundColor={UnistylesRuntime.getTheme().colors.background}
-                style={theme === 'dark' ? 'light' : 'dark'}
+                barStyle={theme === 'dark' ? 'light-content' : 'dark-content'}
             />
             <View style={styles.containerImages}>
                 <Image
@@ -65,18 +71,20 @@ const styles = StyleSheet.create((theme) => ({
     },
     header: {
         fontSize: 24,
-        fontWeight: 'bold',
+        fontFamily: 'Poppins_700Bold',
         color: theme.colors.text,
         textAlign: 'center',
         marginBottom: 8,
     },
     profession: {
+        fontFamily: 'Poppins_400Regular',
         fontSize: 14,
         color: theme.colors.primary,
         textAlign: 'center',
         marginBottom: 16,
     },
     description: {
+        fontFamily: 'Poppins_400Regular',
         fontSize: 14,
         color: theme.colors.text,
         textAlign: 'center',

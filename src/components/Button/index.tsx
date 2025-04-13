@@ -15,9 +15,9 @@ function Button({ children, ...props }: ButtonProps) {
 const styles = StyleSheet.create((theme) => ({
     buttonContainer: {
         backgroundColor: theme.colors.primary,
-        padding: 16,
+        paddingVertical: 12,
         borderRadius: 4,
-        width: '50%',
+        width: '70%',
     },
 }));
 

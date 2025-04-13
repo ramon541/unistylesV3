@@ -21,6 +21,7 @@ function TextButton({ text, children, ...props }: TextButtonProps) {
 const styles = StyleSheet.create((theme) => ({
     buttonText: {
         fontSize: 14,
+        fontFamily: 'Poppins_400Regular',
         color: theme.colors.background,
         textAlign: 'center',
     },
