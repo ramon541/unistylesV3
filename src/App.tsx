@@ -6,6 +6,7 @@ import {
     Poppins_700Bold,
     useFonts,
 } from '@expo-google-fonts/poppins';
+import switchTheme from 'react-native-theme-switch-animation';
 
 import { light } from './libs/unistyles/theme';
 import { AppThemes } from './libs/unistyles';
@@ -17,8 +18,16 @@ export default function App() {
     function onToggleTheme() {
         const currentTheme = UnistylesRuntime.getTheme();
         const newTheme = currentTheme === light ? 'dark' : 'light';
-        setTheme(newTheme);
-        UnistylesRuntime.setTheme(newTheme);
+        switchTheme({
+            switchThemeFunction: () => {
+                UnistylesRuntime.setTheme(newTheme);
+                setTheme(newTheme);
+            },
+            animationConfig: {
+                type: 'fade',
+                duration: 500,
+            },
+        });
     }
 
     return (

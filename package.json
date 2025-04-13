@@ -20,6 +20,7 @@
         "react-native": "0.76.8",
         "react-native-edge-to-edge": "^1.5.1",
         "react-native-nitro-modules": "0.25.2",
+        "react-native-theme-switch-animation": "^0.8.0",
         "react-native-unistyles": "^3.0.0-beta.8"
     },
     "devDependencies": {
